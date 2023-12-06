@@ -1,0 +1,20 @@
+function main() {
+    r1();
+}
+
+function r1() {
+    let answer = readLine ("Riddle #1: I'm tall when I'm young and short when I'm old.\nWhat am I? ");
+    
+    while (answer != "Candle" || answer != "candle" || answer != "CANDLE") {
+        console.log("Sorry, that is incorrect. Try again.");
+        let answer = readLine("What is your guess? ");
+        
+        if (answer == "Candle" || answer == "candle" || answer == "CANDLE") {
+            console.log("Good guess!\n");
+            break;
+        } else if (answer == "I give up") {
+            console.log("The answer is Candle\n");
+            break;
+        }
+    }
+}
